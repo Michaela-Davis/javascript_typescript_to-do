@@ -6,4 +6,14 @@ class Task {
 
 var tasks: Task[] = [];
 tasks.push(new Task ('Clean the litterboxes.', 'Medium'));
-console.log(tasks);
+tasks.push(new Task ('Buy groceries.', 'Low'));
+tasks.push(new Task ('Do laundry', 'High'));
+
+// Looping in TypeScript is:
+  // for(var individualThing of listOfMultipleThings){
+  //   whateverYouWantToDoWithLoop(thing);
+  // };
+
+for(var task of tasks){
+  console.log(task);
+};
